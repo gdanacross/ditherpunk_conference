@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 120
+select = ["ALL"]
+ignore = ["D1", "ANN101", "FBT"]
+cache-dir = "/tmp/ruff-cache/"
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+ignore-missing-imports = true

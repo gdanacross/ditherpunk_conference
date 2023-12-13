@@ -7,10 +7,22 @@
 	"settings": {
 		"editor.formatOnSave": true,
 		"[python]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true,
 			"editor.codeActionsOnSave": {
-				"source.organizeImports.ruff": true
+				"source.organizeImports.ruff": "explicit",
+				"source.organizeImports": "explicit"
 			},
-			"editor.defaultFormatter": "ms-python.black-formatter"
-		}
+			"editor.defaultFormatter": "ms-python.black-formatter",
+		},
+		"mypy.runUsingActiveInterpreter": true,
+		"mypy.enabled": true
+	},
+	"extensions": {
+		"recommendations": [
+			"matangover.mypy",
+			"ms-python.black-formatter",
+			"charliermarsh.ruff"
+		]
 	}
 }
